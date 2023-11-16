@@ -1,0 +1,669 @@
+/* 
+======================
+Css Reset Classes
+======================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: vazirmatn , sans-serif;
+    font-feature-settings: "ss01";
+}
+
+ul , ol , li{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* 
+======================
+Utility Classes
+======================
+*/
+.font-color{
+    color: #061962;
+}
+
+.font-800{
+    font-weight: 800;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.btn{
+    border: none;
+    font-size: 1.025em;
+    font-family: vazirmatn , sans-serif;
+    padding: .25em .5em;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: #0040FF;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* 
+======================
+Typographi Classes
+======================
+*/
+.font-2-5{
+    font-size: 2.5em;
+    font-weight: 800;
+    color: rgb(46, 46, 130);
+}
+
+.font-2{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(46, 46, 130);
+}
+
+/* 
+======================
+Navigation Classes
+======================
+*/
+.navigation{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    margin: auto;
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 999;
+}
+
+.navigation .nav-list ul{
+    display: flex;
+    gap: 1.4em;
+}
+
+.navigation .nav-list ul li{
+    color: #4a5e9d;
+}
+
+/* 
+======================
+Header Classes
+======================
+*/
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 236, 255);
+}
+
+.header .inner-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top-box{
+    padding: 50px;
+    text-align: center;
+}
+
+.bottom-box{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+}
+
+header .dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .4em;
+    gap: 1.5em;
+    color: #b5b5b5dd;
+}
+
+header .dots-container .active{
+    font-size: 1.6em;
+    color: rgb(99, 99, 255);
+}
+
+header .dots-container .semi-active{
+    font-size: 1.3em;
+}
+
+.bottom-box .slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5em;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+}
+
+.bottom-box .slider-container .slide{
+    width: 216px;
+    height: 216px;
+    border-radius: 20px;
+    background-color: rgb(172, 208, 231);
+    padding: .8em;
+}
+
+.bottom-box .slider-container .slide .slide-img{
+    width: 100%;
+    height: 80%;
+}
+
+.bottom-box .slider-container .slide .slide-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-box .slider-container .slide .slider-context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-box .slider-container .slide .slider-context h2{
+    font-size: 1em;
+    font-weight: 800;
+    color: rgb(93, 93, 227);
+}
+
+.bottom-box .slider-container .slide.active .slider-context p{
+    display: block;
+    font-size: .8em;
+}
+
+.bottom-box .slider-container .slide.active{
+    transform: scale(1.5);
+    background-color: rgb(193, 221, 238);
+}
+
+.bottom-box .slider-container .slide p{
+    display: none;
+}
+
+/* 
+======================
+Main Classes
+======================
+*/
+main{
+    background: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+main .services{
+    width: 1200px !important;
+    height: auto;
+    background-color: transparent;
+    margin: auto;
+}
+
+main .services .service-header{
+    margin: auto;
+    text-align: center;
+    height: 150px;
+    padding-top: 5em;
+}
+
+main .services .service{
+    padding-top: 4em;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+main .services .service .right-box .service-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+main .services .service .right-box .service-lists .card-container{
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    background-color: #e2e6fe;
+    border-radius: 15px;
+    gap: 1.5em;
+}
+
+main .services .service .right-box .service-lists .card-container.active{
+    background-color: transparent;
+    border: 1px solid rgb(222, 222, 107);
+}
+
+main .services .service .right-box .service-lists .card-container .card-img{
+    width: 60px;
+}
+
+main .services .service .left-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em 2em 2em 4em;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d1d1d1;  
+    border-radius: 30px;
+}
+
+.services .left-box .left-box-context {
+    width: 408px;
+}
+
+.left-box-context h3{
+    margin-bottom: 3em;
+    color: #828CB1;
+}
+
+.left-box-context .suggestion-item{
+    margin-bottom: 1em;
+}
+
+main .suggestion-item{
+    border: 1px solid #b1b1b1;
+    border-radius: 30px;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .suggestion-item p{
+    font-size: .8em ;
+    font-weight: 400;
+}
+
+main .suggestion-context p{
+    font-weight: 300;
+    color: #061962;
+    margin-bottom: 4em;
+    text-align: justify;
+}
+
+main .suggestion-item div{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+main .suggestion-item div i{
+    color: #F8D748;
+}
+
+main .suggestion-img{
+    width: 260px;
+    height: 300px;
+}
+
+/* 
+======================
+BigCustomer Classes
+======================
+*/
+.bigCustomer{
+    margin: auto;
+    margin-top: 8em;
+    width: 1200px;
+    height: 300px;
+    background-color: transparent;
+}
+
+.bigCustomer .bigCustomer-header{
+    height: 150px;
+    background-color: transparent;
+}
+
+.bigCustomer .bigCustomer-header h2{
+    margin-bottom: 4em;
+    color: rgb(46, 46, 130);
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.bigCustomer .brand-container{
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigCustomer .brand-container .brandImg-container{
+    width: 200px;
+}
+
+.bigCustomer .brand-container .brandImg-container img{
+    color: #eee;
+}
+/* 
+======================
+BigCustomer Classes
+======================
+*/
+main .application{
+    margin-top: 14em;
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 236, 255);
+}
+
+main .application-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    background-color: transparent;
+}
+
+main .application-container .img-container{
+    object-fit: fill;
+    width: 530px;
+    height: auto;
+}
+
+main .application-container .application-context{
+    float: left;
+    text-align: center;
+}
+
+main .application-container .social-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    gap: 1em;
+}
+
+main .application-container .social-app .version-container{
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+main .application-container .app-store{
+    min-height: 150px;
+    width: 650px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #D0D9F5;
+}
+
+main .application-container .app-store .store{
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1em;
+}
+
+/* 
+======================
+Magazine Classes
+======================
+*/
+
+main .dg-magazine{
+    margin-top: 4em;
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+}
+
+main .dg-magazine .magazine-header{
+    text-align: center;
+}
+
+.magazines-type {
+    padding-top: 2em;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.magazine-lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.magazine-lists li{
+    border: 1px solid blue;
+    padding: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.magazine-lists li a{
+    text-decoration: none;
+    color: black;
+}
+
+.magazines-type .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.magazines-type .buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: 7px;
+    background-color: rgb(164, 164, 164);
+    color: #fff;
+    border: none;
+}
+
+.magazine-items{
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1.5em;
+}
+
+.magazine-items .box{
+    position: relative;
+    min-width: 570px;
+    min-height: 300px;
+    border-radius: 20px;
+    background-image: url(https://www.mydigipay.com/static/2023/10/677d71cd-6a97-4473-b6cc-eddb5499c98b.webp);
+    background-size: cover;
+    background-color: rebeccapurple;
+    overflow: auto;
+}
+
+.magazine-items .news-type{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+    background-color: rgba(144, 144, 71, 0.697);
+    padding: .5em;
+    border-radius: 20px;
+}
+
+.magazine-items .magazine-title{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #fff;
+    background-color: #0040ff6e;
+    backdrop-filter: blur(10px);
+    padding: 0 35px;
+    width: 100%;
+    height: 30%;
+}
+
+/* 
+======================
+Magazine Classes
+======================
+*/
+
+footer{
+    margin-top: 2em;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+
+footer .address .logo-img{
+    width: 75px;
+}
+
+footer .social-media{
+    margin-top: 2em;
+}
+
+footer .social-media .social-lists{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+footer .social-media .social-lists li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
+footer .social-media .social-lists li a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+footer .about{
+    display: flex;
+    gap: 4em;
+}
+
+footer .first-font{
+    font-weight: 800;
+    margin-bottom: 1.5em;
+}
+
+footer .about a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .download .download-stores h4{
+    padding-right: 1.5em;
+    padding-bottom: 2em;
+    color: #0040FF;
+}
+
+footer .download .download-stores ul{
+    display: flex;
+} 
+
+footer .download-stores ul li{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    padding: 0 1.5em;
+}
+
+footer .download-stores ul li i{
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+footer .download-stores ul li h6{
+    cursor: pointer;
+    font-size: small;
+    font-weight: 600;
+}
+
+footer .download-stores ul li p{
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: 300;
+}
+
+footer .border-left{
+    border-left: 1px solid black;
+}
+
+footer .downolad-link{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #e9effc;
+    border-radius: 20px;
+    
+}
+
+footer .downolad-link p:first-child{
+    font-size: .8em;
+    font-weight: 700;
+}
+
+footer .downolad-link p:nth-child(2){
+    font-size: .8em;
+    font-weight: 300;  
+}
+
+footer .downolad-link .btn{
+    background-color: blue;
+    font-size: .8em ;
+    font-weight: 900;
+    color: white;
+}
+
